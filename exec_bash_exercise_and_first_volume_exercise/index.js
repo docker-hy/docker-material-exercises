@@ -38,5 +38,3 @@ const gracefulClose = async () => {
 
 process.on('SIGTERM', gracefulClose)
 process.on('SIGINT', gracefulClose)
-
-
