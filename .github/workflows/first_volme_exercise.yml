@@ -23,4 +23,4 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
         tags: latest
         buildargs: SECRET_MESSAGE
-        context: exec_bash_exercise_and_first_volume_exercise
+        workdir: exec_bash_exercise_and_first_volume_exercise
