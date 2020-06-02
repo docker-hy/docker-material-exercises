@@ -2,6 +2,7 @@ const fsPromises = require('fs').promises
 
 const SECRET_MESSAGE = process.env.SECRET_MESSAGE
 const filePath = `${__dirname}/logs.txt`
+
 let rounds = 0
 let filehandle
 
