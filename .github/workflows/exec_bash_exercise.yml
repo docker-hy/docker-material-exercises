@@ -18,7 +18,7 @@ jobs:
       env:
         SECRET_MESSAGE: ${{ secrets.EXEC_BASH_EXERCISE_SECRET_MESSAGE }}
       with:
-        name: jakousa/exec_bash_exercise
+        name: devopsdockeruh/exec_bash_exercise
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         tags: latest
