@@ -1,0 +1,9 @@
+FROM node:dubnium
+
+ARG SECRET_MESSAGE
+ENV SECRET_MESSAGE=$SECRET_MESSAGE
+
+WORKDIR /usr/app
+COPY . .
+
+CMD ["node", "index"]

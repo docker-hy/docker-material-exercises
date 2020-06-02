@@ -1,0 +1,15 @@
+{
+  "name": "ports_exercise",
+  "version": "1.0.0",
+  "description": "Practice opening ports",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jami Kousa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
