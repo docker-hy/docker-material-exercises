@@ -35,9 +35,6 @@ jobs:
         id: buildx
         uses: crazy-max/ghaction-docker-buildx@v2
 
-      - name: Available platforms
-        run: echo ${{ steps.buildx.outputs.platforms }}
-
       - uses: azure/docker-login@v1
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
@@ -47,6 +44,7 @@ jobs:
         run: |
           docker buildx create --use
           docker buildx build \
-            --platform linux/386,linux/amd64,linux/arm/v6,linux/arm/v7,linux/arm64,linux/ppc64le,linux/s390x \
+            --platform linux/amd64,linux/arm,linux/arm64,linux/ppc64le,linux/s390x \
+            --build-arg SECRET_MESSAGE=${{ secrets.FIRST_VOLUME_EXERCISE_SECRET_MESSAGE }}
             --tag devopsdockeruh/first_volume_exercise:multiarch \
             --push ./exec_bash_exercise_and_first_volume_exercise
