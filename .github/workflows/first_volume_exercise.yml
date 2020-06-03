@@ -45,6 +45,6 @@ jobs:
           docker buildx create --use
           docker buildx build \
             --platform linux/amd64,linux/arm,linux/arm64,linux/ppc64le,linux/s390x \
-            --build-arg SECRET_MESSAGE=${{ secrets.FIRST_VOLUME_EXERCISE_SECRET_MESSAGE }} \
+            --build-arg "SECRET_MESSAGE=${{ secrets.FIRST_VOLUME_EXERCISE_SECRET_MESSAGE }}" \
             --tag devopsdockeruh/first_volume_exercise:multiarch \
             --push ./exec_bash_exercise_and_first_volume_exercise
