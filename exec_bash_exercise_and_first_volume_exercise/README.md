@@ -1,1 +1,1 @@
-Writes "secret message" to file every 15 seconds. Otherwise logs time.
+Writes "secret message" to file every once in a while.
