@@ -14,7 +14,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Publish to Registry
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Publish-Docker-Github-Action@v5
       env:
         SECRET_MESSAGE: ${{ secrets.EXEC_BASH_EXERCISE_SECRET_MESSAGE }}
       with:
